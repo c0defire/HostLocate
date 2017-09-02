@@ -1,11 +1,9 @@
 #! /bin/bash
 
 ############################################################
-# Author: c0defire
+# Author: C0defire
 # Version 1.0
 # This script will find all live hosts in a Class C range.
-# 
-# RED TEAM TOOLS
 ############################################################
 
 clear
@@ -17,28 +15,8 @@ cat << "EOF"
 |   Y  (  <_> )___ \  |  |    |  |_(  <_> )  \___ / __ \|  | (  <_> )  | \/
 |___|  /\____/____  > |__|____|____/\____/ \___  >____  /__|  \____/|__|   
      \/           \/    /_____/                \/     \/                   
-                                                                              V 1.0
-  _________________________________________________
- < Seek your prey first and then go for the attack >
-  -------------------------------------------------
-      \
-       \
-                                   .::!!!!!!!:.
-  .!!!!!:.                        .:!!!!!!!!!!!!
-  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$ 
-      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P 
-      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$# 
-      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$* 
-      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R" 
-        "*$bd$$$$      '*$$$$$$$$$$$o+#" 
-             """"          """"""" 
+     
 EOF
-#echo "Available interfaces:"
-#list_IF=$(netstat -i | head | awk {'print $1'} | grep -v "Kernel" | grep -v "Iface")
-#echo $list_IF 
-#echo "Enter interface"
-#read interface
-
 class=$(ip address | grep "inet" | head -3 | tail -1 | awk {'print $2'} | cut -f1-3 -d.)
 
 echo
