@@ -1,9 +1,10 @@
-# LinuxRecon
-Linux Red Team reconnaissance script. 
+# HostLocate
+ 
+- Finds all online hosts on the selected network using ping.
+- Reports results to stdout.
 
-Files Included: 
-
-- host_locator.sh: 
-      1). This is a RED TEAM TOOL script that helps in reconnaissance.
-      2). Finds all online hosts on the selected network the user is one.
-      3). Reports results to stdout.
+### How to use
+```sh
+$ chmod +x host-locate.sh
+$ ./host-locate.sh
+```
