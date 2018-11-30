@@ -18,7 +18,7 @@ cat << "EOF"
 [***]                Host Locator               [***]
 [***]           Created by: C0defire            [***]
                     Version: 1.0.0
-[***]       Github: Github.com/javierfaustino   [***]
+[***]       Github: Github.com/c0defire   [***]
 
 
         `-:::-.`                   
